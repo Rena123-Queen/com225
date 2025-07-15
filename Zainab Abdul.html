@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Future Ambition</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .background-glow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(0,255,204,0.2), transparent 70%);
+      animation: pulseGlow 4s infinite;
+      z-index: 0;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.1); }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      padding: 50px 35px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,255,200,0.4);
+      text-align: center;
+      max-width: 500px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .icon {
+      font-size: 65px;
+      color: #00ffe0;
+      margin-bottom: 20px;
+      animation: lockPulse 2.5s infinite;
+    }
+
+    @keyframes lockPulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+    }
+
+    h1 {
+      font-size: 2.6em;
+      margin-bottom: 10px;
+      color: #00ffcc;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: #ffdd40;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #eee;
+    }
+
+    .name {
+      margin-top: 30px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #00cfff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Glowing background effect -->
+  <div class="background-glow"></div>
+
+  <div class="card">
+    <div class="icon">
+      <i class="fas fa-shield-alt"></i>
+    </div>
+    <h1>My Future Ambition</h1>
+    <h2>To Become a Cybersecurity Specialist</h2>
+    <p>
+      I want to become a cybersecurity specialist who protects systems, data, and people from digital threats. My ambition is to defend networks, prevent cyber attacks, and build a safer digital world.
+      ST/CS/ND/23/018
+    </p>
+    <div class="name">— Zainab Abdul —</div>
+  </div>
+
+</body>
+</html>
