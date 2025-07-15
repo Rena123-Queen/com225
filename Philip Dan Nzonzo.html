@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Future Ambition</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Unique animated binary background */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #000;
+      color: #fff;
+      position: relative;
+    }
+
+    .binary {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 0, 0.1) 0 2px,
+        transparent 2px 20px
+      );
+      animation: scroll 10s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes scroll {
+      from { background-position: 0 0; }
+      to { background-position: 0 100%; }
+    }
+
+    .card {
+      position: relative;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 50px 30px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(0, 255, 0, 0.4);
+      z-index: 1;
+      max-width: 500px;
+    }
+
+    .icon {
+      font-size: 60px;
+      color: #00ff99;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #00ffcc;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: #ffea00;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #eee;
+    }
+
+    .name {
+      margin-top: 25px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #00e5ff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Animated binary background -->
+  <div class="binary"></div>
+
+  <div class="card">
+    <div class="icon">
+      <i class="fas fa-laptop-code"></i>
+    </div>
+    <h1>My Future Ambition</h1>
+    <h2>To Become a Computer Programmer</h2>
+    <p>
+      I aspire to become a skilled computer programmer, writing code that powers useful applications and drives innovation. I want to build smart software that solves real problems in the world.
+      ST/CS/ND/23/111
+    </p>
+    <div class="name">— Philip Dan Nzonzo —</div>
+  </div>
+
+</body>
+</html>
