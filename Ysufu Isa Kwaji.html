@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>Digital Legend - Terminal Mode</title>
+     <!--Font Awseome for icons-->
+     <script
+     src="https://kit.fontawesome.com/a076do5399.js"
+     crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #00ff00;
+            font-family: "Courier New", monospace;
+            display: flex;
+            flex-direction: column;
+            align-items:center ;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            
+             }  
+             .icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #00ffcc;
+            animation: pulse 2s infinite;
+
+          }
+            
+           .terminal{
+            background: #111;
+            border: 2px solid #00ff00;
+            padding: 40px 30px;
+            width:90%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #00ff00;
+        }
+
+        .line {
+            font-size: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #00ff00;
+            animation: typing 4s steps(40,end), blink 0.75s step-end infinite;
+        }
+        .line :nth-child(2){  animation-delay: 3.5s;}
+
+         .line :nth-child(3){  animation-delay: 7s }
+
+         .line :nth-child(4){  animation-delay: 10.5s;}
+
+         .line :nth-child(5){  animation-delay: 14s;}
+
+         @keyframes typing {
+            from {width: 0;}
+            to {width: 100%;}
+          }
+          @keyframes blink {
+            from, to {border-color: transparent;}
+            50% {border-color: #00ff00;}
+          }
+
+          
+          @keyframes pulse {
+            0% { transform: scale(1);}
+            50% { transform: scale(1.1);}
+            100% { transform: scale(1);}
+          }
+          .granted {
+            color: #00ff00;
+            font-weight: bold;
+            animation: flash 1s infinite;
+          }
+          @keyframes flash {
+            0% { opacity: 1;}
+            50% { opacity: 0.2;}
+            100% { opacity: 1;}
+          } 
+        </style>
+        </head>
+        <body>
+        <!--Hacker Mask icons-->
+    <div class="icon"><i class="fas fa-user-ninja"></i></div>
+        
+    <!--Termal Section-->
+        <div class="terminal">
+            <div class="line">>Loading King Of Boys....</div>
+
+            <div class="=line">>Identity: Yusuf Isa Kwaji</div>
+
+            <div class="line">>Ambition: To Become The Richest Man In The World </div>
+
+            <div class="line">>Registration Number: ST/CS/ND/23/124</div>
+            
+            <div class="line granted">>ACCESS GRANTED </div>
+            </div>
+        
+</body>
+</html>
