@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Future Ambition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #1a2a6c, #b21f1f, #fdbb2d);
+      background-size: 300% 300%;
+      animation: gradientShift 12s ease infinite;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      padding: 50px 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      max-width: 500px;
+      animation: fadeIn 1.5s ease;
+      z-index: 2;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .icon {
+      font-size: 70px;
+      color: #ffffff;
+      text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      font-size: 2.8em;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 20px 0 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      font-size: 1.6em;
+      background: linear-gradient(to right, #00c9ff, #92fe9d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #f5f5f5;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .name {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #ffeb3b;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    /* Sparkles */
+    .sparkle {
+      position: absolute;
+      font-size: 20px;
+      opacity: 0.4;
+      animation: twinkle 4s infinite alternate;
+      pointer-events: none;
+    }
+
+    @keyframes twinkle {
+      0% { opacity: 0.1; transform: scale(0.8) rotate(0deg); }
+      100% { opacity: 1; transform: scale(1.2) rotate(360deg); }
+    }
+
+    .sparkle:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+    .sparkle:nth-child(2) { top: 80%; left: 15%; animation-delay: 1s; }
+    .sparkle:nth-child(3) { top: 50%; left: 85%; animation-delay: 2s; }
+    .sparkle:nth-child(4) { top: 25%; left: 60%; animation-delay: 3s; }
+    .sparkle:nth-child(5) { top: 70%; left: 70%; animation-delay: 4s; }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Sparkles -->
+  <div class="sparkle">✨</div>
+  <div class="sparkle">💫</div>
+  <div class="sparkle">🌈</div>
+  <div class="sparkle">⭐</div>
+  <div class="sparkle">🔥</div>
+
+  <div class="card">
+    <div class="icon">
+      <i class="fas fa-palette"></i>
+    </div>
+    <h1>My Future Ambition</h1>
+    <h2>To Become a Graphic Designer</h2>
+    <p>
+      My dream is to bring ideas to life through vibrant designs, bold creativity, and colorful expression. I will craft logos, posters, and digital art that leave lasting impressions. My imagination is my superpower!
+      ST/CS/ND/23/059
+    </p>
+    <div class="name">— Isa Ibrahim —</div>
+  </div>
+
+</body>
+</html>
+
+
+
